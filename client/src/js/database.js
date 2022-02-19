@@ -1,5 +1,4 @@
 import { openDB } from 'idb';
-
 const initdb = async () =>
   openDB('jate', 1, {
     upgrade(db) {
@@ -11,8 +10,7 @@ const initdb = async () =>
       console.log('jate database created');
     },
   });
-
-// TODO: Add logic to a method that accepts some content and adds it to the database
+// Method that takes some content and adds it to the IndexedDB database using the idb module
 export const putDb = async (content) => {
   console.log('PUT to the database');
   const jateDb = await openDB('jate', 1);
@@ -22,7 +20,7 @@ export const putDb = async (content) => {
   const result = await request;
   console.log(':rocket: - data saved to the database', result.value);
 };
-
+// Method that gets content from the IndexedDB database using the idb module
 export const getDb = async () => {
   console.log('GET from the database');
   const jateDb = await openDB('jate', 1);
