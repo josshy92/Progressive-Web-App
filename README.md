@@ -3,3 +3,9 @@ This is a simple one page text editor that will run in most browsers. It feature
 
 # Mentions
 This application was finished as a class code along with the approval of the instructor, TAs, and the SSM D.R.
+
+# Links
+Heroku Live Link: https://infinite-badlands-13252.herokuapp.com/
+
+# Image
+![image](https://user-images.githubusercontent.com/88861538/154819837-91f909a9-abd0-49f2-9813-da19964ccf4b.png)
