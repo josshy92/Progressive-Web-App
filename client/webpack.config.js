@@ -21,20 +21,20 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: "J.A.T.E"
+        title: 'J.A.T.E'
       }),
       new InjectManifest({
-        swSrc: "./src-sw.js",
-        swDest: "src-sw.js"
+        swSrc: './src-sw.js',
+        swDest: 'src-sw.js',
       }),
       new WebpackPwaManifest({
         fingerprints: false,
-        inject: true, 
-        name: "Josshy's Just Another Text Editor App",
-        short_name: "J.A.T.E",
-        description: "Takes notes with JS syntax highlighting",
-        background_color: "#225ca3",
-        theme_color: "#225ca3",
+        inject: true,
+        name: 'Josshys Just Another Text Editor',
+        short_name: 'J.A.T.E',
+        description: 'Takes notes with JavaScript syntax highlighting!',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
         start_url: '/',
         publicPath: '/',
         icons: [
@@ -46,7 +46,6 @@ module.exports = () => {
         ],
       }),
     ],
-
     module: {
       rules: [
         {
