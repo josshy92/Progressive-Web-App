@@ -1,3 +1,5 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 # Progressive-Web-App
 This is a simple one page text editor that will run in most browsers. It features data persistence techniques that serve as redudancy in case one of the options aren't supported in the respective browser. 
 
